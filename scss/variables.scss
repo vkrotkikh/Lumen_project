@@ -62,7 +62,7 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $blue !default;
+$primary:       #cf3825 !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -245,7 +245,7 @@ $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
 $h1-font-size:                3.4375rem !default;
-$h2-font-size:                3rem !default;
+$h2-font-size:                1.75rem !default;
 $h3-font-size:                1.875rem !default;
 $h4-font-size:                1.625rem !default;
 $h5-font-size:                1.25rem !default;

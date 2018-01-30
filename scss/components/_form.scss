@@ -1,0 +1,20 @@
+.form-group_items{
+
+}
+
+.form-group{
+	display: flex;
+	align-items: center;
+	& label{
+		flex-basis: 50%;
+	}
+	& input{
+		flex-basis: 50%;
+	}
+}
+.form-control{
+	&:hover,
+	&:focus{
+		box-shadow: none !important;
+	}
+}

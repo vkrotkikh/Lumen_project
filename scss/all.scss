@@ -1,10 +1,6 @@
-
-
-@import "components/reset";
-
-
-
-/* Bootstrap*/
+/*------------------------------------------------------------------
+	Bootstrap
+-------------------------------------------------------------------*/
 @import "../libs/bootstrap/scss/functions";
 /* @import "../libs/bootstrap/scss/variables";*/
 @import "variables";
@@ -46,16 +42,33 @@
 @import "../libs/slick-carousel/slick.scss";
 @import "../libs/slick-carousel/slick-theme.scss";
 @import "../libs/slick-lightbox/slick-lightbox";
+
+
+/*------------------------------------------------------------------
+	Fonts
+-------------------------------------------------------------------*/
+
+$icomoon-font-path: "../fonts/Icomoon/" ; 
+
 @import "fonts/style";
 
-/*Custom*/
+
+
+/*------------------------------------------------------------------
+	Custom modules
+-------------------------------------------------------------------*/
+
 @import "components/fonts";
-@import "components/global";
 @import "components/buttons";
 @import "components/header";
 @import "components/img-wrap";
+@import "components/reset";
 @import "components/form";
 @import "sections/section-home";
 @import "components/section";
 @import "components/account";
+@import "components/nav";
+@import "components/lang";
+@import "components/window_border";
 @import "global";
+@import "helper";

@@ -19,7 +19,7 @@
                 <div class="header-logo-wrap">
                     <h2>Lumen</h2>
                 </div>
-                <ul class="header-menu">
+                <ul class="header-menu -nav_primary">
                     <li>
                         <a href="#?">Collections</a>
                     </li>
@@ -47,31 +47,56 @@
     <main class="main">
         <div class="container">
             <section class="section-account">
-                <div class="account-header">
-                	<form action="javascript:void(0);">
-                		<div class="account-user_img">
-                			
-                		</div>
-                		<div class="account-user_block">
-                			<h2 class="account-user_title">User Name</h2>
-                			<span class="account-user_subtitle">Your photo</span>
-                		</div>
-                		<div class="account-header_bot">
-		                    <ul class="nav nav-tabs account-user_tab" >
-		                        <li class="nav-item">
-		                            <a class="nav-link active" id="account-profile_tab" data-toggle="tab" href="#account-profile" role="tab" aria-controls="account-profile" aria-selected="true">Profile</a>
-		                        </li>
-		                        <li class="nav-item">
-		                            <a class="nav-link" id="account-wishlist_tab" data-toggle="tab" href="#account-wishlist" role="tab" aria-controls="account-wishlist" aria-selected="false">Wishlist</a>
-		                        </li>
-		                    </ul>
-		                    <input type="submit" class="btn btn-primary" value="Save">
-                		</div>
-                	</form>
-                </div>
+                <form action="javascript:void(0);" class="account-header">
+                    <div class="account-header_left">
+                        <div class="account-user_img">
+                            <input type="file" id="user_photo">
+                            <label for="user_photo">
+                                <i class="icon-arrow_download_top"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="account-header_right">
+                        <div class="account-user_block">
+                            <h2 class="account-user_title">User Name</h2>
+                            <span class="account-user_subtitle"><strong>Your photo</strong></span>
+                        </div>
+                        <div class="account-header_bot">
+                            <ul class="nav  account-user_tab -nav_primary">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="account-profile_tab" data-toggle="tab" href="#account-profile" role="tab" aria-controls="account-profile" aria-selected="true">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-wishlist_tab" data-toggle="tab" href="#account-wishlist" role="tab" aria-controls="account-wishlist" aria-selected="false">Wishlist</a>
+                                </li>
+                            </ul>
+                            <div class="btn-wrapper -md -primary btn">
+                                <input type="submit" value="Save">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
                 <div class="account-body">
                     <div class="tab-content">
-                        <div class="tab-pane fade show active" id="account-profile" role="tabpanel" aria-labelledby="account-profile_tab">..1.</div>
+                        <div class="tab-pane fade show active" id="account-profile" role="tabpanel" aria-labelledby="account-profile_tab">
+                            <div class="row -custom_row_35">
+                                <div class="col-lg-6">
+                                    <form action="javascript:void(0);" class="account-form_item">
+                                        <h2 class="account-form_title">Payment Methods</h2>
+                                        <div class="form-group_items">
+	                                        <div class="form-group -required">
+	                                            <label for="user_card_number">Card number</label>
+	                                            <input type="text" class="form-control" id="user_card_number"  placeholder="1234 5678 9101 1213" required>
+	                                        </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-6">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo voluptatum aliquam numquam sint sapiente modi. Quam dicta odit excepturi dolores ratione, libero commodi iure quae temporibus neque, perferendis, voluptates atque laborum corporis quod facilis, consequuntur labore ipsa fugit ullam vero porro? Eaque possimus, perspiciatis ex vitae odio quod ut nostrum!
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="account-wishlist" role="tabpanel" aria-labelledby="account-wishlist_tab">.2..</div>
                     </div>
                 </div>
