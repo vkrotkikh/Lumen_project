@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	$(window).on('scroll', function() {
+		if ($(window).scrollTop() > 10) {
+			$('.header').addClass('-scroll');
+		} else {
+			$('.header').removeClass('-scroll');
+		}
+	});
+
 	$('.home-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,

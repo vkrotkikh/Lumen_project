@@ -3,8 +3,8 @@
 	z-index: 1;
 	&-inner {
 		position: relative;
-		padding: 145px 0 70px;
-		height: 100vh;
+		padding: 75px 0 70px;
+		height: calc(100vh - 75px);
 		z-index: 2;
 	}
 	h1 {
@@ -30,9 +30,12 @@
 .tags {
 	h6 {
 		font-size: 19px;
-		margin-bottom: 5px;
+		margin-bottom: 8px;
 	}
 	ul {
+		li {
+			margin-bottom: 8px;
+		}
 		a {
 			line-height: 1;
 		}
@@ -47,7 +50,7 @@
 
 .home-slider {
 	position: absolute;
-	top: 75px;
+	top: 0;
 	right: 0;
 	bottom: 5px;
 	width: 65%;

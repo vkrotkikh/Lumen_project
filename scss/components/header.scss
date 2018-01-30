@@ -1,10 +1,28 @@
 .header {
 	position: fixed;
 	top: 0;
-	left: 0;
-	right: 0;
+	left: 6px;
+	right: 6px;
 	padding: 17px 0;
 	z-index: 3;
+	transition: all .4s;
+		&:before {
+			display: block;
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 6px;
+			background-color: $primary;
+		}
+	.navbar {
+		padding: 0;
+	}
+	&.-scroll {
+		background-color: #fff;
+		box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.11);
+	}
 }
 .header-inner-wrap {
 	display: flex;
@@ -22,4 +40,13 @@
 .header-menu {
 	display: flex;
 	margin: 3px 0 0;
+}
+
+
+@media screen and (max-width:1199px) {
+	.header-menu.-nav_primary {
+		a {
+			padding: 0 15px;
+		}
+	}
 }
