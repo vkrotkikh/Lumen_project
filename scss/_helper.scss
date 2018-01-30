@@ -1,0 +1,10 @@
+.hira {
+	font-family: "hiragino_kaku";
+}
+.-custom_row_35{
+	margin-left: -35px;
+	margin-right: -35px;
+	& [class*="col-"]{
+		padding: 0 35px;
+	}
+}

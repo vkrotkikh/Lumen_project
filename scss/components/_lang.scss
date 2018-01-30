@@ -1,0 +1,44 @@
+.language {
+	position: absolute;
+	bottom: 70px;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	ul {
+		position: absolute;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin: 0;
+		bottom: 0;
+		-webkit-transform: rotate(-90deg) translate(60px, 58px);
+		        transform: rotate(-90deg) translate(60px, 58px);
+		li {
+			&:first-child {
+				a {
+					&:before {
+						display: block;
+						position: absolute;
+						content: '';
+						width: 3px;
+						height: 100%;
+						left: 100%;
+						top: 0;
+						background-color: #000;
+					}
+				}
+			}
+		}
+		a {
+			position: relative;
+			display: block;
+			padding-right: 20px;
+			margin-right: 20px;
+			line-height: 1;
+			font-weight: 700;
+			font-size: 18px;
+			&:first-child {
+			}
+		}
+	}
+}
