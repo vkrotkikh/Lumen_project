@@ -1,0 +1,55 @@
+.art{
+	&-header{
+		margin-bottom: 40px;
+	}
+	&-item{
+		// margin-bottom: 80px;
+		&_title{
+			margin-bottom: 10px;
+		}
+		&_img{
+			position: relative;
+			height: 0;
+			padding-bottom: 56.25%;
+			margin-bottom: 40px;
+		}
+		&_descr{
+				position: relative;
+				&:after{
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					right: 0;
+					transform: translateY(-50%);
+					height: 3px;
+					background: #000;
+				}
+			& p {
+				background: #fff;
+				padding-right: 15px;
+				display: inline-block;
+				position: relative;
+				z-index: 1;
+			}
+		}
+	}
+	&-block{
+		margin-bottom: 80px;
+	}
+}
+
+.artist{
+	&-item{
+		&_img{
+			position: relative;
+			height: 0;
+			padding-bottom: 100%;
+			margin-bottom: 40px;
+		}
+		&_title{
+
+		}
+	}
+}

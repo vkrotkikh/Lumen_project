@@ -8,3 +8,26 @@
 		padding: 0 35px;
 	}
 }
+.-custom_row_25{
+	margin-left: -25px;
+	margin-right: -25px;
+	& [class*="col-"]{
+		padding: 0 25px;
+	}
+}
+
+.-mg_bot40{
+	margin-bottom: 40px;
+}
+.resp-img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

@@ -47,7 +47,8 @@
 			transition: all .15s;
 			left: 0;
 		}
-		&:hover {
+		&:hover,
+		&.active {
 			&:before {
 				opacity: 1;
 			}
