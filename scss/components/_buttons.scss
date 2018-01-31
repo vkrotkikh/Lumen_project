@@ -68,6 +68,21 @@
 		}
 	}
 }
+.-ico{
+	& i {
+		font-size: 10px;
+	}
+	&_left{
+		& i {
+			margin-right: 15px;
+		}
+	}
+	&_right{
+		& i {
+			margin-left: 15px;
+		}
+	}
+}
 
 .btn-wrapper{
 	padding: 0;

@@ -19,6 +19,9 @@
 	}
 	&.-radio{
 	}
+	&.-border_bot0{
+		border-bottom: 0;
+	}
 	&.-required{
 		& label{
 			&:after{
