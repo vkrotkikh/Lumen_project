@@ -26,6 +26,7 @@
 	&.-show-menu {
 		background-color: #fff;
 		height: calc(100vh - 6px);
+		overflow-y: auto;
 	}
 }
 .header-inner-wrap {
@@ -68,8 +69,8 @@
 			&:after {
 				display: none;
 			}
-			&:first-child {
-				&:before {
+			&:last-child {
+				&:after {
 					display: none;
 				}
 			}
@@ -83,6 +84,26 @@
 				height: 6px;
 				width: calc(100% + 30px);
 			}
+		}
+	}
+}
+
+@media screen and (max-width:767px) {
+	.header {
+		.container {
+			padding: 0 15px;
+		}
+	}
+}
+
+@media screen and (max-width:550px) {
+	.header-menu.-nav_primary {
+		margin-top: 50px;
+		li {
+			margin-bottom: 30px;
+		}
+		a {
+			font-size: 34px;
 		}
 	}
 }
