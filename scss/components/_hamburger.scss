@@ -1,0 +1,55 @@
+.navbar-toggler.-custom{
+	position: relative;
+	width: 57px;
+	height: 48px;
+	transition: all .2s;
+	span {
+		background: #000;
+		display: block;
+		position: absolute;
+		width: 57px;
+		height: 5px;
+		left: 0;
+		opacity: 1;
+		transition: all .2s;
+		&:nth-child(1) {
+			top: 9px;
+		}
+		&:nth-child(2) {
+			top: 22px;
+			&:before {
+				background-color: #fff;
+				display: block;
+				position: absolute;
+				content: '';
+				width: 9px;
+				height: 100%;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		&:nth-child(3) {
+			top: 34px;
+		}
+	}
+	&.-show-menu {
+		transition: all .2s;
+		span {
+			width: 48px;
+			left: 50%;
+			&:nth-child(1) {
+				top: 20px;
+				transform: translateX(-50%) rotate(135deg);
+			}
+			&:nth-child(2) {
+				left: -60px;
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				top: 20px;
+				transform: translateX(-50%) rotate(-135deg);
+			}
+		}
+	}
+}

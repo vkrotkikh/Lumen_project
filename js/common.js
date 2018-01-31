@@ -8,6 +8,12 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.navbar-toggler.-custom').click(function(){
+		$(this).toggleClass('-show-menu');
+		$('.header').toggleClass('-show-menu');
+		$('.language').toggleClass('-show-menu');
+	});
+
 	$('.home-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
