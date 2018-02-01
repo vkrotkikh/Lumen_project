@@ -1,0 +1,24 @@
+.collection-header {
+	margin-bottom: 35px;
+	.heading {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 15px;
+		p {
+			margin-bottom: 3px;
+		}
+	}
+	.descr {
+		max-width: 50%;
+		line-height: 1.55;
+	}
+}
+
+@media screen and (max-width:991px) {
+	.collection-header {
+		.descr {
+			max-width: 100%;
+		}
+	}
+}

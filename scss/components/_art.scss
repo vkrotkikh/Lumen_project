@@ -33,6 +33,17 @@
 				z-index: 1;
 			}
 		}
+		&_text {
+			margin-top:20px;
+		}
+		&.-collection {
+			.art-item_img {
+				margin-bottom: 45px;
+			}
+			.art-item_title {
+				margin-bottom: 15px;
+			}
+		}
 	}
 	&-block{
 		// margin-bottom: 20px;

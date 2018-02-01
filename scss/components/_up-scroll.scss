@@ -1,0 +1,27 @@
+.up-scroll {
+	position: absolute;
+	bottom: 70px;
+	left: 0;
+	right: 0;
+	.container {
+		position: relative;
+	}
+	.up-btn {
+		position: absolute;
+		bottom: 5px;
+		left: 33.3%;
+		writing-mode: tb-rl;
+		transform: rotate(180deg);
+		font-size: 18px;
+		font-weight: 700;
+	}
+}
+
+@media screen and (max-width:991px) {
+	.up-scroll {
+		.up-btn {
+			left: inherit;
+			right: 30px;
+		}
+	}
+}

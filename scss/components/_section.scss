@@ -13,4 +13,44 @@
 			}
 		}
 	}
+	&-collection {
+		overflow: hidden;
+		padding-top: 75px;
+		& .row {
+			[class*="col-"] {
+				&:last-child {
+
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width:991px) {
+	.section {
+		&-collection {
+			& .row {
+				[class*="col-"] {
+					&:last-child {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:767px) {
+	.section {
+		&-collection {
+			& .row {
+				[class*="col-"] {
+					&:last-child {
+						display: block;
+					}
+				}
+			}
+		}
+	}
 }
