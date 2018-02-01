@@ -1,0 +1,60 @@
+.interview-item {
+	margin-bottom: 85px;
+	&_title {
+		margin-bottom: 30px;
+	}
+	&_descr {
+		line-height: 1.55;
+		p {
+			margin-bottom: 30px;
+		}
+	}
+	&_asside {
+		line-height: 1.55;
+		p {
+			margin-bottom: 20px;
+		}
+		.author {
+			border-top: 2px solid #000;
+			border-bottom: 2px solid #000;
+			padding: 20px 0 15px;
+			margin-bottom: 250px;
+			h6 {
+				font-size: 14px;
+				margin-bottom: 5px;
+			}
+			span {
+				line-height: 1;
+			}
+		}
+		.btn-primary {
+			display: block;
+		}
+	}
+	.art-item_img {
+		padding-bottom: 47.34%;
+	}
+	.read-more {
+		position: relative;
+		font-weight: 700;
+		&:before {
+			display: block;
+			position: absolute;
+			content: '';
+			width: calc(100% + 10px);
+			height: 2px;
+			background-color: #000;
+			top: 50%;
+			left: -5px;
+			transform: translateY(-50%);
+			opacity: 0;
+			transition: all .15s;
+		}
+		&:hover {
+			&:before {
+				opacity: 1;
+				transition: all .15s;
+			}
+		}
+	}
+}
