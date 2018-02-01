@@ -1,0 +1,87 @@
+.about-tabs-wrap {
+	display: flex;
+	padding-top: 95px;
+	.about-tabs {
+		flex-basis: 34.75%;
+		display: block;
+		border: none;
+		.nav-item {
+			margin: 0 0 18px;
+		}
+		.nav-link {
+			border: none;
+			position: relative;
+			display: inline-block;
+			padding: 0;
+			font-size: 19px;
+			font-weight: 700;
+			border-radius: 0;
+			line-height: 1;
+			&:before {
+				display: block;
+				position: absolute;
+				content: '';
+				width: calc(100% + 15px);
+				height: 2px;
+				background-color: #000;
+				top: 50%;
+				left: -8px;
+				transform: translateY(-50%);
+				opacity: 0;
+				transition: all .15s;
+			}
+			&:hover,
+			&:focus,
+			&.active {
+				color: #000;
+				border: none;
+				&:before {
+					opacity: 1;
+					transition: all .15s;
+				}
+			}
+		}
+	}
+	.tab-content {
+		flex-basis: 65.25%;
+		.tab-pane {
+			&:nth-child(4),
+			&:nth-child(2) {
+				.about-tabs-content {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+	.about-tabs-content {
+		max-height: 470px;
+		padding-left: 90px;
+		padding-right: 90px;
+		overflow-y: auto;
+		line-height: 1.55;
+		h6 {
+			margin-bottom: 5px;
+		}
+		p {
+			margin-bottom: 35px;
+		}
+	}
+}
+
+.news-item {
+	position: relative;
+	padding-right: 90px;
+	img {
+		display: block;
+		width: 100%;
+		margin-bottom: 45px;
+	}
+	.news-date {
+		position: absolute;
+		top: 0;
+		right: 0;
+		writing-mode: tb-rl;
+		transform: rotate(180deg);
+		z-index: 1;
+	}
+}

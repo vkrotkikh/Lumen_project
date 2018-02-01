@@ -14,6 +14,11 @@ $(document).ready(function() {
 		$('.language').toggleClass('-show-menu');
 	});
 
+	$('.custom-scroll').mCustomScrollbar({
+		scrollbarPosition:"outside",
+		scrollButtons:{ enable: true }
+	});
+
 	$('.home-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,

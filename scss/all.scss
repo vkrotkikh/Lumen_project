@@ -42,6 +42,7 @@
 @import "../libs/slick-carousel/slick.scss";
 @import "../libs/slick-carousel/slick-theme.scss";
 @import "../libs/slick-lightbox/slick-lightbox";
+@import "../libs/malihu-scroll/jquery.mCustomScrollbar.min";
 
 
 /*------------------------------------------------------------------
@@ -64,6 +65,8 @@ $icomoon-font-path: "../fonts/Icomoon/" ;
 @import "components/reset";
 @import "components/form";
 @import "components/hamburger";
+@import "components/about_tabs";
+@import "components/scroll-custom";
 @import "sections/section-home";
 @import "components/section";
 @import "components/account";
