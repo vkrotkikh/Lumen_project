@@ -1,0 +1,27 @@
+.temporary-wrap {
+	min-height: calc(100vh - 75px);
+	padding-bottom: 75px;
+	display: flex;
+	align-items: flex-end;
+	h1 {
+		margin-bottom: 20px;
+	}
+	h5 {
+		margin-bottom: 75px;
+	}
+	form {
+		max-width: 630px;
+		.form-group {
+			&.-submit {
+				display: block;
+				padding: 75px 0 0;
+				height: auto;
+				.btn {
+					padding: 0 60px;
+				}
+			}
+		}
+	}
+}
+
+
