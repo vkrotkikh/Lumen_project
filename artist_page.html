@@ -1,191 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Artist page</title>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ARG</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="all.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.ico">
 </head>
 
-<body>
-    <!-- HEADER -->
+<body data-spy="scroll" data-target="#header_navbar" data-offset="95">
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <div class="header-logo-wrap">
-                    <a href="index.html"><h2>Lumen</h2></a>
-                </div>
-                <button class="navbar-toggler -custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto header-menu -nav_primary">
-                        <li class="nav-item  active">
-                            <a href="javascript:void(0);">Collections</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="services.html">Artists</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="events.html">Online Exhibition</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="testimonials.html">Account</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="testimonials.html">Log out</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="/">
+                <span class="logo-img">
+                    <img src="./img/logo.png" alt="">
+                </span>
+                <span>Absolute Resolution Group</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header_navbar" aria-controls="header_navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="header_navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#section-welcome">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-partner">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-helpful">Helpful Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-contacts">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
-    <!-- HEADER END -->
-    <!-- MAIN -->
-    <main class="main">
-        <div class="container">
-            <section class="section-account">
-                <div class="account-header">
-                    <div class="account-header_left">
-                        <div class="account-user_img">
-                            <img src="./img/user_jeff_simpson.png" alt="">
-                        </div>
-                    </div>
-                    <div class="account-header_right">
-                        <div class="account-user_block">
-                            <h2 class="account-user_title">Jeff Simpson</h2>
-                            <div class="account-header_right_title_bot">
-                                <span class="account-user_subtitle"><strong>Montreal, Quebec, Canada</strong></span>
-                                <a href="javascript:void(0);" class="btn btn-primary btn-md"><span>Follow</span></a>
+    <main class="wrapper">
+        <section class="section section-welcome" id="section-welcome">
+            <div class="welcome-slider" id="welcome_slider">
+                <div class="welcome-item" style="background-image: url(./img/img-slider_girl.png);">
+                    <!--<h1 class="text-center">Smart choice. Smart solution</h1>-->
+                </div>
+                <div class="welcome-item" style=" background-image: url(./img/img-slider_team.png);">
+                </div>
+                <div class="welcome-item" style=" background-image: url(./img/img-slider_team_2.png);">
+                </div>
+            </div>
+            <div class="container">
+               <div class="welcome-descr">
+                    <h2 class="section-title text-center">Welcome</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="desc_block">
+                                <p>Our team of professionals provides business operation and information technology consulting to businesses in the receivables management industry. We strive to provide exceptional customer service to ongoing clients who are looking for a chance to regain control of their finances. Our goal is to assist in financial counseling and prompt resolution in order for you to free yourself of the burden and consequences of debt. It's time to forget about the past and look toward the future; a future without financial stress. Our professional team will help you. Your concern is our concern. We care about each of our client. And find a customized solution for each case. </p>
                             </div>
                         </div>
-                        <div class="account-header_bot">
-                            <ul class="nav  account-user_tab -nav_primary">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="account-user_overview" data-toggle="tab" href="#account-overview" role="tab" aria-controls="account-overview" aria-selected="true">Overview</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="account-interview_tab" data-toggle="tab" href="#account-interview" role="tab" aria-controls="account-interview" aria-selected="false">Interview</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="account-more" data-toggle="tab" href="#account-more" role="tab" aria-controls="account-more" aria-selected="false">More</a>
-                                </li>
+                        <div class="col-md-6">
+                            <div class="desc_block">
+                                <p>Our integrity, resourcefulness and experience have been and will be the foundation of our relationships with clients.</p>
+                                <p>We offer you a wide range of services with using of advanced cloud technologies and the best ratio of a price and quality.</p>
+                                <p>Our goal is to increase your collection ratio, assist in identifying potential problems before they become serious problems. Should you need advice or services, we welcome you to contact our firm and schedule a consultation.</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <section class="section section-approach" id="section-about">
+            <div class="container">
+                <h2 class="section-title text-center">About Us</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="desc_block">
+                            <p>Absolute Resolution Group is dedicated to providing real-world consulting and professional services to the credit and collections Industry.</p>
+                            <p>Absolute Resolution Group, LLC is committed to:</p>
+                            <p><strong class="text-uppercase">Integrity</strong> — We hold ourselves and our strategic partners to the highest ethical and professional standards. ARG's team of steadfast individuals believe in making the right decisions to ensure compliance and satisfaction for all parties. We zealously protect one of your most important assets: your proprietary information.  We keep your proprietary information, client relationships and business practices confidential at all times.</p>
+                            <p><strong class="text-uppercase">Transparency</strong> — We take pride in developing trusting relationships. We believe in honesty and sincerity with our clients, partners, and consumers. We will proactively share information to ensure there are no surprises and that all parties are well informed and comfortable. Additionally, all ARG clients have full access to all information related to all services.</p>
+                            <p><strong class="text-uppercase">Respect</strong> — The foundation of our society is respect. ARG is dedicated to always be respectful to clients, partners and consumers.  As such we are committed to actively listening and recognize that we and our partners must work with consumers to help them reconcile their challenges.</p>
+                            <p><strong class="text-uppercase">Responsiveness</strong> — We strive to listen carefully to our clients and agency partner's needs and concerns, to be inclusive and respectful at all times, and to be responsive and timely in all interactions.</p>
+                            <p><strong class="text-uppercase">Attention to Detail</strong> — We seek to service each client's portfolio as if it were our own, with the objective to achieve excellent performance.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="desc_block">
+                            <p>All of our employees are fully trained by our in-house council on the importance of the FDCPA. Our clients benefit from a significant increase in their return on receivables alleviating the necessity of costly in-house collection procedures.</p>
+                            <p>Represent clients with passion, dedication and integrity. The best form of business and advertisement is referral by a satisfied client.</p>
+                            <p>Cooperating with us, you will get the opportunity to see the quality of our work and deservedly appreciate an individual approach, high level of professionalism, attention to detail and efficiency in completing it while being astonished by our flexible and competitively low rates!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-services" id="section-services">
+            <div class="container">
+                <h2 class="section-title text-center">Services</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="desc_block -pd_bot_20">
+                            <p>We provide the highest quality of collection practices, management, collection staff and call center and client customer service support.</p>
+                            <p>Our company has a great experience in the following areas, such as:</p>
+                            <ul class="list -semibold">
+                                <li>Client and technical support</li>
+                                <li>Mass messages distribution</li>
+                                <li>Marketing research</li>
+                                <li>First cold call</li>
+                                <li>Point caller</li>
+                                <li>Telemarketing</li>
+                                <li>Federal and Provincial Government sector programs</li>
+                                <li>Sociological Surveys</li>
+                                <li>Verification of the customer basic information and keeping it up-to-date <span class="-font_400">(address, phone numbers, employer)</span></li>
+                                <li>etc</li>
                             </ul>
                         </div>
+                        <!-- <div class="img-wrapper">
+                            <img src="./img/img-girl_2.png" alt="">
+                        </div> -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="desc_block">
+                            <p>Absolute Resolution Group also provides a full range of sales or work with a debt portfolio and acquisitions, as well as outsourcing services. Our company acts as a liaison, assisting the seller and buyer in all aspects of the transaction, from pre-sale to post purchase management and outsourcing.</p>
+                            <p>Absolute Resolution Group has a solid reputation with some of the largest direct purchasers of debt in the country. Whether it's credit cards, student loans, medical bills, HOA or any other type of consumer debt we can accommodate your needs.</p>
+                            <p>Absolute Resolution Group applies experience, insights and risk management expertise to help each client acquire, manage and dispose of distressed consumer receivables as an alternative investment strategy.</p>
+                            <p>We strive to provide exceptional customer service to ongoing clients who are looking for a chance to regain control of their finances. Our goal is to assist in financial counseling and prompt resolution in order for you to free yourself of the burden and consequences of debt.</p>
+                            <p>Absolute Resolution Group is committed to treat each consumer with respect and to assist consumers to structure a positive resolution of outstanding debts due.</p>
+                            <p>We hold receivables management to the highest level of ethical and professional standards. ARG expects all collection activities be in accordance with the Fair Debt Collection Practices Act (“FDCPA”), and Fair Credit Reporting Act (“FCRA”). Additionally, all collection activity is conducted in compliance with the code of conduct put forth by the American Collectors Association ("ACA").</p>
+                        </div>
+                        <h3 class="section-slogan">We deliver outstanding results in record time!</h3>
                     </div>
                 </div>
-                <div class="account-body">
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="account-overview" role="tabpanel" aria-labelledby="account-user_overview">
-                            <div class="row -custom_row_25">
-                                <div class="col-lg-6">
-                                    <div class="art-item">
-                                        <div class="art-item_img">
-                                            <div class="resp-img" style="background-image: url(../img/art-img_7.png);"></div>
-                                        </div>
-                                        <h4 class="art-item_title">Protohumans</h4>
-                                        <div class="art-item_descr">
-                                            <p>2017</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="art-item">
-                                        <div class="art-item_img">
-                                            <div class="resp-img" style="background-image: url(../img/art-img_6.png);"></div>
-                                        </div>
-                                        <h4 class="art-item_title">Misc new work</h4>
-                                        <div class="art-item_descr">
-                                            <p>2016</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="art-item">
-                                        <div class="art-item_img">
-                                            <div class="resp-img" style="background-image: url(../img/art-img_5.png);"></div>
-                                        </div>
-                                        <h4 class="art-item_title">Flake</h4>
-                                        <div class="art-item_descr">
-                                            <p>2016</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="art-item">
-                                        <div class="art-item_img">
-                                            <div class="resp-img" style="background-image: url(../img/art-img_4.png);"></div>
-                                        </div>
-                                        <h4 class="art-item_title">Gaze</h4>
-                                        <div class="art-item_descr">
-                                            <p>2016</p>
-                                        </div>
-                                    </div>
-                                </div>
-
+            </div>
+        </section>
+        <section class="section section-partner" id="section-partner">
+            <div class="container">
+                <h2 class="section-title text-center">Partners</h2>
+            </div>
+            <div class="container">
+                <div class="partner-block">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                            <div class="partner-item">
+                                <a href="javascript:void(0);"><img src="img/logos/logo-national.png" alt=""></a>
+                            </div>
+                        </div> 
+                        <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                            <div class="partner-item">
+                                <a href="javascript:void(0);">
+                                    <img src="img/logos/logo-mercantile.png" alt="">
+                                </a>
+                            </div>
+                        </div>    
+                        <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                            <div class="partner-item">
+                                <a href="javascript:void(0);">
+                                    <img src="img/logos/logo-law_adam.png" alt="">
+                                </a>    
+                            </div>
+                        </div> 
+                        <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                            <div class="partner-item">
+                                <a href="javascript:void(0);">
+                                    <img src="img/logos/logo-invest_solutions.png" alt="">
+                                </a>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="account-interview" role="tabpanel" aria-labelledby="account-interview_tab">
-                        	Interview tab
+                        <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                            <div class="partner-item">
+                                <a href="javascript:void(0);">
+                                    <img src="img/logos/logo-NMRC.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="account-more" role="tabpanel" aria-labelledby="account-more">
-                            More tab
+                        <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                            <div class="partner-item">
+                                <a href="javascript:void(0);">
+                                    <img src="img/logos/logo-law_katsman.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                            <div class="partner-item">
+                                <a href="javascript:void(0);">
+                                    <img src="img/logos/logo-finmax.png" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="account-about">
-                    <div class="account-about_open -JS_open_acc_about">
-                        <div class="account-about_open_title">About</div>
-                    </div>
-                    <div class="account-about_descr">
-                        <div class="account-about_descr_item">
-                            <h6><strong>I'm a concept artist currently working for Ubisoft Montreal. At night I either freelance or do personal work jeffsimpsonkh@hotmail.com</strong></h6>
-                            <p>Then I realized how powerful a defined edge, as well as a selected exact value and color, really are; getting these objectives done  actually will tu</p>
-                            <a href="javascript:void(0);" class="btn-link"><strong>www.effsimpsonkh.tumblr.com</strong></a>
+            </div>
+        </section>
+        <section class="section section-helpful" id="section-helpful">
+            <div class="container">
+                <h2 class="section-title text-center">Helpful Links</h2>
+                <div class="desc_block">
+                    We hold receivables management  to the highest level of ethical and professional standards. Global Resolution Center expects all collection activities be in accordance with the <a href="javascript:void(0);" class="-semi_bold">Fair Debt Collection Practices Act (FDCPA)</a>, and <a href="javascript:void(0);" class="-semi_bold">Fair Credit Reporting Act (FCRA)</a>. Additionally, all collection activity is conducted in compliance with the code of conduct put forth by the <a href="javascript:void(0);" class="-semi_bold">American Collectors Association (ACA)</a>.
+                </div>
+                <div class="helpful-items">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="javascript:void(0);" class="helpful-item_img">
+                                <img src="./img/logo-aca.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="javascript:void(0);" class="helpful-item_img">
+                                <img src="./img/logo-CRC.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="javascript:void(0);" class="helpful-item_img">
+                                <img src="./img/logo-DBA.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="section section-contacts" id="section-contacts">
+            <div class="container">
+                <h2 class="section-title text-center">Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="contact-list row">
+                            <li class="col-md-3">
+                                <a href="tel:(866) 687-1712"><i class="im-phone"></i><span>(866) 687-1712</span></a>
+                            </li>
+                            <!--<li class="col-md-4">-->
+                                <!--<a href="tel:(561) 922-5834"><i class="im-print"></i><span>(561) 922-5834</span></a>-->
+                            <!--</li>-->
+                            <li class="col-md-3">
+                                <a href="mailto:info@absolutegroupusa.com"><i class="im-mail"></i><span>info@absolutegroupusa.com</span></a>
+                            </li>
+                            <li class="col-md-6">
+                                <i class="im-location-pin"></i><span>3900 Woodlake Blvd, Suite 305A, Greenacres, FL 33463</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-md-6">
+                        <form action="javascript:void(0);">
+                            <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control"  placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <div class="text-right">
+                                <input type="submit" class="btn btn-primary btn-md" value="SEND">
+                            </div>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <div id="google_map" class="contact-google_map"></div>
     </main>
     <footer class="footer">
+        <p class="footer-copyright">
+            © 2017 Absolute Resolution Group
+        </p>
     </footer>
-    <div class="window-border">
-        <div class="window-border_top"></div>
-        <div class="window-border_right"></div>
-        <div class="window-border_bottom"></div>
-        <div class="window-border_left"></div>
-    </div>
-    <div class="language">
-        <div class="container d-flex justify-content-end">
-            <ul>
-                <li>
-                    <a href="#?">En</a>
-                </li>
-                <li>
-                    <a href="#?">Ch</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- FOOTER END -->
-    <!-- Scripts -->
-    <script src="js/jquery/jquery.min.js"></script>
-    <script src="js/popper.js/popper.min.js"></script>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <script src="js/slick-carousel/slick.min.js"></script>
-    <script src="js/slick-lightbox/slick-lightbox.min.js"></script>
-    <script src="js/malihu-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/common.js"></script>
+    <script src='./js/jquery/jquery.min.js'></script>
+    <script src='./js/bootstrap/bootstrap.bundle.min.js'></script>
+    <script src='./js/slick_slider/slick.min.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh1RpdYtJBHnUtTBqNOVEbkC7W_j720zI"></script>
+    <script src='./js/all.js'></script>
 </body>
 
 </html>
+
+Lorem ipsum dolor sit amet, consectetur.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quod.

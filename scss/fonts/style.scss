@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?sie1ap');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?sie1ap#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?sie1ap') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?sie1ap') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?sie1ap#icomoon') format('svg');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?8vk644');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?8vk644#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?8vk644') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?8vk644') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?8vk644#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow_right {
+  &:before {
+    content: $icon-arrow_right;
+  }
+}
+.icon-arrow_left {
+  &:before {
+    content: $icon-arrow_left;
+  }
+}
 .icon-arrow_download_top {
   &:before {
     content: $icon-arrow_download_top;
